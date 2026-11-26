@@ -4,6 +4,7 @@ Skill de **nutrição esportiva, prescrição de treino de força/hipertrofia e 
 
 ## Funcionalidades
 
+- **Múltiplos Perfis:** gere e isole perfis distintos com `python3 scripts/init.py --perfil <nome>` (ou `--listar`).
 - **Nutrição baseada em evidência:** cálculo de TMB (Mifflin-St Jeor), TDEE e divisão de macros (`scripts/macros.py`), respeitando gramagem **crua** e lista de mercado semanal (`scripts/lista_mercado.py`).
 - **Prescrição de treino baseada em evidência:** volume fracionário (10–20 séries/músculo/semana), proximidade da falha (`1–3 RIR`), descanso entre séries, *double progression*, *deload* e ênfase em **posição alongada**.
 - **Integração bidirecional com Hevy Pro:**

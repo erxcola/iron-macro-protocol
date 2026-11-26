@@ -11,9 +11,9 @@ Personal nutritionist + strength coach + biomechanics screen for a single owner 
 
 Invoke this skill whenever the user asks anything that touches body composition, training programming, nutrition protocols, meal plans, grocery lists, or progress tracking. Do **not** use it for medical diagnosis, prescription drugs, eating-disorder coaching, or anything that needs a licensed clinician — in those cases, name the limit and point them to a real professional before refusing the rest.
 
-## Owner model
+## Owner & Multi-Profile model
 
-This skill is scoped to **one person** (the account owner). The profile lives at `~/.nutri-personal/perfil.json` and the progress DB at `~/.nutri-personal/progress.sqlite`. First run creates both; subsequent runs read them without asking.
+By default, the owner's profile lives at `~/.nutri-personal/perfil.json` and `~/.nutri-personal/progress.sqlite`. To generate and manage **additional profiles** (e.g., for another person or goal), pass `--perfil <nome>` to `scripts/init.py` (which creates `~/.nutri-personal/profiles/<nome>/perfil.json` and `progress.sqlite`) or `--listar` to list existing profiles.
 
 Never assume values you don't have. If `perfil.json` is missing a field needed for the request, ask once, write it, continue.
 
